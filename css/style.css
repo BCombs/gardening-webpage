@@ -17,17 +17,36 @@ body {
     background-color: rgba(0,0,0,0.5);
 }
 
-.content-container {
-    background: #fff;
+main {
     width: 60%;
     height: 60%;
+}
+
+/*** Main Content ***/
+.content-container {
+    background: #fff;
+    width: 100%;
+    height: 100%;
     display: flex;
     overflow: hidden;
 }
 
 #landing, #about, #services, #gallery, #contact {
-    display: block;
     min-width: 100%;
     width: 100%;
     height: 100%;
+}
+
+/*** Navigation ***/
+.button-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 4rem;
+}
+
+.button-container a {
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    font-size: 0.3em;
+    color: #fff;
 }
