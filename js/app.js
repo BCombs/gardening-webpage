@@ -11,7 +11,6 @@ onSelect = element => {
 
 // Hide what is currently showing
 hideCurrentSelection = () => {
-  console.log(currentSelection);
   currentSelection.classList.remove('selected');
   // Change the selected button's color back to default
   selectedButton.style.color = '#fff';
