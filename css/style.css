@@ -27,6 +27,17 @@ body {
     
 }
 
+.item {
+    display: none;
+    min-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.selected {
+    display: block;
+}
+
 /*************** Main Content ***************/
 .main-container {
     background: #fff;
@@ -73,7 +84,7 @@ body {
 #landing .company-intro p {
     color: #777;
     text-align: left;
-    font-size: 1.1em;
+    font-size: 1.5em;
     line-height: 2rem;
 }
 
@@ -83,15 +94,67 @@ body {
     height: 100%;
 }
 
-.item {
-    display: none;
-    min-width: 100%;
+/*** About ***/
+.about-content {
+    width: 100%;
+    height: 90%;
+    text-align: center;
+}
+
+.about-content h2 {
+    font-size: 2.6em;
+    color: #034618;
+}
+
+.about-content .about-wrapper {
+    display: flex;
     width: 100%;
     height: 100%;
 }
 
-.selected {
-    display: block;
+.about-content .about-wrapper .about-info {
+    box-sizing: border-box;
+    width: 50%;
+    height: 90%;
+    padding: 2rem;
+}
+
+.about-content .about-wrapper .about-info h3 {
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.about-content .about-wrapper .about-info h3 span {
+    color: #034618;
+}
+
+.about-content .about-wrapper .about-info h4 {
+    margin-top: 0.5rem;;
+}
+
+.about-content .about-wrapper .about-info p {
+    color: #777;
+    text-align: left;
+    font-size: 1.5em;
+    line-height: 2rem;
+}
+
+.about-content .about-wrapper .about-img {
+    width: 50%;
+    height: 50%;
+}
+
+.about-content .about-wrapper .about-img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.about-content .about-wrapper .about-img p {
+    font-size: 1.5em;
+    color: #777;
+    padding: 1rem;
 }
 
 /*************** Navigation ***************/
@@ -134,4 +197,11 @@ footer .social-media-container a {
 footer span {
     color: #fff;
     font-size: 1em;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #landing .landing-content .company-intro p {
+        font-size: 1em;
+        line-height: 1.5rem;
+    }
 }
