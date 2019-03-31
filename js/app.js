@@ -1,5 +1,6 @@
+// Initial selection when page loads
 let currentSelection = document.getElementById('landing');
-let selectedButton = document.getElementById('landing-btn');
+let selectedButton = document.getElementById(`${currentSelection.id}-btn`);
 selectedButton.style.color = 'yellow';
 
 // Change the content are when a button is selected
@@ -10,6 +11,7 @@ onSelect = element => {
 
 // Hide what is currently showing
 hideCurrentSelection = () => {
+  console.log(currentSelection);
   currentSelection.classList.remove('selected');
   // Change the selected button's color back to default
   selectedButton.style.color = '#fff';
