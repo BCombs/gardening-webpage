@@ -8,22 +8,27 @@ body {
     background-size: cover;
 }
 
-.container {
+.app-container {
+    display: flex;
     width: 100vw;
     height: 100vh;
-    display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgba(0,0,0,0.5);
 }
 
-main {
+.content-container {
     width: 60%;
     height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 /*** Main Content ***/
-.content-container {
+.main-container {
     background: #fff;
     width: 100%;
     height: 100%;
@@ -31,22 +36,55 @@ main {
     overflow: hidden;
 }
 
-#landing, #about, #services, #gallery, #contact {
+.item {
+    display: none;
     min-width: 100%;
     width: 100%;
     height: 100%;
+}
+
+.selected {
+    display: block;
 }
 
 /*** Navigation ***/
 .button-container {
     display: flex;
     flex-direction: column;
-    margin-left: 4rem;
+    margin-left: 3rem;
 }
 
-.button-container a {
-    margin-bottom: 0.5rem;
+.button-container a{
+    margin-top: 0.5rem;
     text-decoration: none;
     font-size: 0.3em;
     color: #fff;
+    float: right;
+}
+
+.button-container a:hover {
+    color: yellow;
+}
+
+/*** Footer ***/
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.social-media-container {
+    display: inline-block;
+}
+
+footer .social-media-container a {
+    color: #fff;
+    margin-right: 1rem;
+}
+
+footer span {
+    color: #fff;
+    font-size: 1em;
 }

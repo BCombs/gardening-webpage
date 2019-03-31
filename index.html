@@ -9,25 +9,34 @@
     <title>Eco Green Gardening</title>
 </head>
 <body>
-    <div class="container">
-        <main>
-            <div class="content-container">
-                <div id="landing"><h1>Landing</h1></div>
-                <div id="about"><h1>About Us</h1></div>
-                <div id="services"><h1>Services</h1></div>
-                <div id="gallery"><h1>Gallery</h1></div>
-                <div id="contact"><h1>Contact</h1></div>
+    <div class="app-container">
+        <div class="content-container">
+            <div class="main-container">
+                <div id="landing" class="item selected"><h1>Landing</h1></div>
+                <div id="about" class="item"><h1>About Us</h1></div>
+                <div id="services" class="item"><h1>Services</h1></div>
+                <div id="gallery" class="item"><h1>Gallery</h1></div>
+                <div id="contact" class="item"><h1>Contact</h1></div>
             </div>
-        </main>
+            <footer>
+                <div class="social-media-container">
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook-square fa-2x"></i></a>
+                    <a href="https://www.twitter.com"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href="https://www.linkedin.com"><i class="fab fa-linkedin fa-2x"></i></a>
+                </div>
+                <span>Copyright &copy; 2019 Bill Combs Development</span>
+            </footer>
+        </div>
         <nav>
             <div class="button-container">
-                <a href="#" id="landing-btn"><i class="fas fa-circle"></i></a>
-                <a href="#" id="about-btn"><i class="fas fa-circle"></i></a>
-                <a href="#" id="services-btn"><i class="fas fa-circle"></i></a>
-                <a href="#" id="gallery-btn"><i class="fas fa-circle"></i></a>
-                <a href="#" id="contact"><i class="fas fa-circle"></i></a>
+                <a href="javascript:onSelect(landing)" id="landing-btn"><i class="fas fa-circle"></i></a>
+                <a href="javascript:onSelect(about)" id="about-btn"><i class="fas fa-circle"></i></a>
+                <a href="javascript:onSelect(services)" id="services-btn"><i class="fas fa-circle"></i></a>
+                <a href="javascript:onSelect(gallery)" id="gallery-btn"><i class="fas fa-circle"></i></a>
+                <a href="javascript:onSelect(contact)" id="contact-btn"><i class="fas fa-circle"></i></a>
             </div>
         </nav>
     </div>
+    <script src="js/app.js"></script>
 </body>
 </html>
